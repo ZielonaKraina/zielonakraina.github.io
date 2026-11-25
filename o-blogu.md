@@ -1,6 +1,6 @@
 ---
 title: O blogu
-description: Czym jest Zielona Kraina i o czym można tu przeczytać.
+description: Zielona Kraina to blog o pielęgnacji roślin doniczkowych. Sprawdź, o czym są artykuły i dla kogo powstał blog.
 permalink: /o-blogu/
 ---
 
@@ -8,10 +8,10 @@ permalink: /o-blogu/
 
 # O blogu
 
-[Tu napisz kilka zdań o blogu. Na przykład skąd pomysł, o jakich roślinach piszesz i dla kogo są artykuły.]
+Zielona Kraina to blog o roślinach doniczkowych. Artykuły dotyczą codziennej pielęgnacji roślin w domu. Można tu znaleźć porady o podlewaniu, przesadzaniu, nawożeniu i wyborze stanowiska. Są też teksty o chorobach i szkodnikach oraz o tym, jak rozpoznać pierwsze objawy problemów.
 
-## Kontakt
+## Dla kogo jest blog
 
-[Tu wpisz adres e-mail bloga, jeśli go założysz. Możesz też usunąć tę sekcję.]
+Blog powstał z myślą o osobach, które dopiero zaczynają uprawiać rośliny w domu. Przyda się też tym, którzy mają już kilka gatunków i chcą lepiej o nie dbać.
 
 </div>
