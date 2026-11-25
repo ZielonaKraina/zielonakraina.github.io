@@ -23,7 +23,7 @@ webmaster_verifications:
   google: 3fCaG7od0aA82Qhefjzex701vm1pqveKeOBcYwf6sbQ
 # --- GOOGLE ANALYTICS 4 ---
 # Usuń # z linii poniżej i wpisz swój identyfikator (zaczyna się od G-)
-# google_analytics: G-9FK48V01S2
+google_analytics: G-9FK48V01S2
 
 # ===========================================================
 #  Poniżej ustawienia techniczne – nie trzeba ich ruszać
