@@ -51,4 +51,28 @@ Zraszanie liści daje krótkotrwały efekt. Woda szybko odparowuje i wilgotnoś�
 
 ### Zmiana miejsca
 
-Rośliny lepiej odsunąć od kaloryfera i nawiewów ciepłego powietrza. Na czas
+Rośliny lepiej odsunąć od kaloryfera i nawiewów ciepłego powietrza. Na czas wietrzenia najlepiej zdjąć je z parapetu. Stabilna temperatura bez nagłych zmian zmniejsza stres rośliny.
+
+### Podlewanie dopasowane do zimy
+
+Zimą większość roślin potrzebuje mniej wody niż latem. Mniej wody nie oznacza jednak przesuszania. Przed podlaniem trzeba sprawdzić palcem, czy ziemia przeschła pod powierzchnią. Roślinę podlewa się obficie, aż woda wypłynie otworami w dnie doniczki. Wodę z podstawki należy wylać.
+
+### Przepłukanie podłoża
+
+Gdy na ziemi widać biały nalot, podłoże można przepłukać czystą wodą. Roślinę podlewa się obficie i pozwala wodzie swobodnie wypłynąć z doniczki. Po ok. 20 minutach czynność się powtarza. Tak usuwa się nadmiar soli. Przepłukanie ma sens tylko w doniczce z otworami odpływowymi.
+
+Przy mocno zasolonym podłożu lepiej przesadzić roślinę do świeżej ziemi. Zimą roślin nie trzeba nawozić, chyba że rosną pod lampą do roślin.
+
+### Przycięcie suchych końcówek
+
+Suche końcówki można obciąć ostrymi nożyczkami. Cięcie najlepiej prowadzić zgodnie z naturalnym kształtem liścia. Wtedy jest prawie niewidoczne. Przycięcie poprawia wygląd rośliny, ale nie usuwa przyczyny. Bez zmian w pielęgnacji końcówki zaczną zasychać ponownie.
+
+## Rośliny najbardziej wrażliwe na suche powietrze
+
+Brązowe końcówki liści szczególnie często pojawiają się u dracen i zielistek. Wrażliwe są też kalatee, maranty i kordyliny. Bardzo źle suche powietrze znoszą paprocie. U tych roślin zimą trzeba szczególnie pilnować wilgotności i regularnego podlewania.
+
+Kaktusy i większość sukulentów dobrze radzą sobie w suchym powietrzu. U nich zasychanie końcówek rzadko wynika z niskiej wilgotności.
+
+## Kiedy brązowienie liści jest naturalne
+
+Starsze liście z czasem brązowieją i obumierają. To normalny proces, który najczęściej dotyczy najniższych liści. Jeśli zmiany pojawiają się na pojedynczych starych liściach, a nowe rosną zdrowe, nie ma powodu do niepokoju. Sygnałem problemu są brązowe końcówki na wielu liściach, także tych młodszych.
