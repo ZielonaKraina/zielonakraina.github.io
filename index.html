@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap">
+    <h1>{{ site.tagline }}</h1>
+    <p>{{ site.description }}</p>
+  </div>
+</section>
+
+<section class="wrap posts" aria-labelledby="najnowsze">
+  <h2 id="najnowsze">Najnowsze artykuły</h2>
+  {% if site.posts.size > 0 %}
+  <div class="grid">
+    {% for p in site.posts %}
+      {% include karta.html p=p %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="empty">Pierwsze artykuły już wkrótce.</p>
+  {% endif %}
+</section>

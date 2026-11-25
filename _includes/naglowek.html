@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} – strona główna">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 29V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M16 17C16 9 21 4 28 4c0 8-5 13-12 13Z" fill="currentColor"/><path d="M16 21c0-6-4-10-11-10 0 6 4 10 11 10Z" fill="currentColor" opacity=".55"/></svg>
+      <span>{{ site.title }}</span>
+    </a>
+    <nav class="nav" aria-label="Menu główne">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Artykuły</a>
+      <a href="{{ '/o-blogu/' | relative_url }}"{% if page.url == '/o-blogu/' %} aria-current="page"{% endif %}>O blogu</a>
+    </nav>
+  </div>
+</header>

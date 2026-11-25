@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{%- assign slowa = content | strip_html | number_of_words -%}
+{%- assign minuty = slowa | divided_by: 200 | plus: 1 -%}
+<article class="post wrap-narrow">
+  <nav class="crumbs" aria-label="Ścieżka nawigacji">
+    <a href="{{ '/' | relative_url }}">Strona główna</a>
+    <span aria-hidden="true">›</span>
+    {% if page.category %}<span>{{ page.category }}</span>
+    <span aria-hidden="true">›</span>{% endif %}
+    <span aria-current="page">{{ page.title }}</span>
+  </nav>
+
+  <header class="post-head">
+    {% if page.category %}<p class="kicker">{{ page.category }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{% include data.html d=page.date %}</time>
+      {% if page.last_modified_at %}<span>· aktualizacja <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% include data.html d=page.last_modified_at %}</time></span>{% endif %}
+      <span>· {{ minuty }} min czytania</span>
+    </p>
+  </header>
+
+  {% if page.image %}
+  <figure class="cover">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" width="1200" height="675" fetchpriority="high">
+  </figure>
+  {% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>
+
+{%- if page.category -%}
+{%- assign podobne = site.posts | where: "category", page.category -%}
+{%- assign ile = 0 -%}
+{%- capture lista -%}
+  {%- for p in podobne -%}
+    {%- if p.url != page.url and ile < 3 -%}
+      {%- assign ile = ile | plus: 1 -%}
+      {% include karta.html p=p %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if ile > 0 -%}
+<section class="related wrap" aria-labelledby="podobne">
+  <h2 id="podobne">Przeczytaj też</h2>
+  <div class="grid">{{ lista }}</div>
+</section>
+{%- endif -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "{{ '/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 2, "name": {{ page.title | jsonify }}, "item": "{{ page.url | absolute_url }}" }
+  ]
+}
+</script>

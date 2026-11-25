@@ -1,0 +1,60 @@
+# ===========================================================
+#  USTAWIENIA BLOGA – ZIELONA KRAINA
+#  Linie zaczynające się od # to komentarze (nie działają).
+# ===========================================================
+
+title: Zielona Kraina
+tagline: Blog o roślinach doniczkowych
+description: Podlewanie, przesadzanie, choroby, szkodniki i pielęgnacja roślin doniczkowych w domu przez cały rok.
+
+url: "https://zielonakraina.github.io"
+baseurl: ""
+lang: pl
+locale: pl_PL
+timezone: Europe/Warsaw
+
+# Domyślny obrazek przy udostępnianiu linku (Facebook, LinkedIn itp.)
+image: /assets/img/og-domyslny.png
+logo: /assets/img/logo.png
+
+# --- GOOGLE SEARCH CONSOLE ---
+# Usuń # z dwóch linii poniżej i wklej kod z GSC zamiast TU_WKLEJ_KOD
+# webmaster_verifications:
+#   google: TU_WKLEJ_KOD
+
+# --- GOOGLE ANALYTICS 4 ---
+# Usuń # z linii poniżej i wpisz swój identyfikator (zaczyna się od G-)
+# google_analytics: G-XXXXXXXXXX
+
+# ===========================================================
+#  Poniżej ustawienia techniczne – nie trzeba ich ruszać
+# ===========================================================
+
+permalink: /:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - INSTRUKCJA.md
+  - README.md

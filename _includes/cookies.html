@@ -1,0 +1,41 @@
+{% if site.google_analytics %}
+<div class="cookies" id="cookies" role="dialog" aria-label="Zgoda na pliki cookies" hidden>
+  <p>Ta strona może używać plików cookies Google Analytics do zbierania statystyk odwiedzin. Bez zgody nie są one zapisywane. Więcej w <a href="{{ '/polityka-prywatnosci/' | relative_url }}">polityce prywatności</a>.</p>
+  <div class="cookies-btns">
+    <button type="button" class="btn btn-ghost" data-zgoda="nie">Odrzuć</button>
+    <button type="button" class="btn" data-zgoda="tak">Akceptuję</button>
+  </div>
+</div>
+<script>
+(function () {
+  var ID = '{{ site.google_analytics }}';
+  var box = document.getElementById('cookies');
+  function wlaczGA() {
+    if (window.__gaOn) return;
+    window.__gaOn = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', ID);
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+  }
+  var z = null;
+  try { z = localStorage.getItem('zgoda-cookies'); } catch (e) {}
+  if (z === 'tak') wlaczGA();
+  else if (z !== 'nie') box.hidden = false;
+  box.addEventListener('click', function (e) {
+    var v = e.target.getAttribute('data-zgoda');
+    if (!v) return;
+    try { localStorage.setItem('zgoda-cookies', v); } catch (err) {}
+    box.hidden = true;
+    if (v === 'tak') wlaczGA();
+    else if (window.__gaOn) location.reload();
+  });
+  var ust = document.getElementById('cookies-ustawienia');
+  if (ust) ust.addEventListener('click', function () { box.hidden = false; });
+})();
+</script>
+{% endif %}

@@ -1,0 +1,2 @@
+{%- assign _m = include.d | date: "%-m" | minus: 1 -%}
+{{- include.d | date: "%-d" }} {{ site.data.miesiace[_m] }} {{ include.d | date: "%Y" -}}

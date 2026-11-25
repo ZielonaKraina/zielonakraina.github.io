@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    <nav aria-label="Stopka">
+      <a href="{{ '/o-blogu/' | relative_url }}">O blogu</a>
+      <a href="{{ '/polityka-prywatnosci/' | relative_url }}">Polityka prywatności</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      {% if site.google_analytics %}<button type="button" class="link-btn" id="cookies-ustawienia">Ustawienia cookies</button>{% endif %}
+    </nav>
+  </div>
+</footer>
