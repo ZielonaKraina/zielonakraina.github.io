@@ -15,12 +15,8 @@ Blog działa na platformie GitHub Pages. GitHub może zapisywać adresy IP odwie
 
 ## Pliki cookies i Google Analytics
 
-Blog może korzystać z Google Analytics 4 do zbierania statystyk odwiedzin, np. liczby wyświetleń stron i źródeł ruchu. Pliki cookies Google Analytics są zapisywane wyłącznie po wyrażeniu zgody w banerze. Zgodę można zmienić w każdej chwili przez link „Ustawienia cookies” w stopce strony.
+Blog korzysta z Google Analytics 4 do zbierania statystyk odwiedzin, np. liczby wyświetleń stron i źródeł ruchu. Pliki cookies Google Analytics są zapisywane wyłącznie po wyrażeniu zgody w banerze. Zgodę można zmienić w każdej chwili przez link „Ustawienia cookies” w stopce strony.
 
 Dane z Google Analytics przetwarza Google. Więcej informacji jest w polityce prywatności Google.
-
-## Kontakt
-
-[Tu wpisz adres e-mail bloga.]
 
 </div>
